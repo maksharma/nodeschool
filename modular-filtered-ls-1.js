@@ -11,7 +11,7 @@ function myFilter(dirname, extn, cb) {
       return path.extname(file) === "." + extn;
     });
 
-    cb(null, filtered);
+     cb(null, filtered);
   });
 }
 
