@@ -21,7 +21,11 @@ function processPost(request, response, callback){
     if(request.method == 'POST'){
       request.on('data',function(d){
         data+=d;
-        console.log(data);
+        //console.log(data);
+      });
+      request.on('end',function(){
+      request.post = querystring.parse(data);
       });
     }
+
 };

@@ -1,5 +1,4 @@
-	var filepath = process.argv[2];
-	var fileextension = process.argv[3];
+	
 	var fs = require('fs');
 	var path = require('path');
 	//console.log('scanning in' +filepath+' for .'+fileextension);
